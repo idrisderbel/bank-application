@@ -2,7 +2,10 @@ var express = require('express');
 var app = express();
 const {createNewAccount,deposit,withdraw,balance, transfer} = require('./db')
 
-const port=3000
+const cors=require('cors')
+const port=3100
+app.use(cors())
+
 
 app.post('/create', express.json(), (req, res) => {
     createNewAccount( req.body.acName,req.body.balance , (msg) => {
