@@ -1,0 +1,11 @@
+{
+  "name": "nodejs-banking-app",
+  "version": "1.0.0",
+  "description": "simple banking app",
+  "main": "menu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
